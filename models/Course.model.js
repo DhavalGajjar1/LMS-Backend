@@ -16,7 +16,7 @@ const mongoose = require('mongoose');
         },
         description:{
             type:String,
-            required:[truew,"Please add a description"],
+            required:[true,"Please add a description"],
         },
         instructor:{
             type:mongoose.Schema.Types.ObjectId,
