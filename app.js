@@ -27,8 +27,10 @@ app.get('/',(req,res)=>{
 });
 
 const authRoutes=require('./routes/auth.routes');
+const courseRoutes=require('./routes/course.routes');
 
 app.use('/api/auth',authRoutes);
+app.use('/api/courses',courseRoutes);
 
 // app.use(errorHandler);
 
