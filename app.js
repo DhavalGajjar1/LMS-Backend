@@ -28,9 +28,14 @@ app.get('/',(req,res)=>{
 
 const authRoutes=require('./routes/auth.routes');
 const courseRoutes=require('./routes/course.routes');
+const enrollmentRoutes = require('./routes/enrollment.routes');
+const ProgressRoutes = require('./routes/progress.routes')
+
 
 app.use('/api/auth',authRoutes);
 app.use('/api/courses',courseRoutes);
+app.use('/api/enrollments',enrollmentRoutes)
+app.use('/api/progress',ProgressRoutes)
 
 // app.use(errorHandler);
 

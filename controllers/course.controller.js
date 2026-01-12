@@ -79,7 +79,7 @@ const addLesson = asyncHandler(async (req, res) => {
     }
 
     const lesson = { title, videoUrl, duration, content };
-    course.lesson.push(lesson);
+    course.lessons.push(lesson);
     await course.save();
 
     res.status(201).json(course);
