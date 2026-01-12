@@ -7,6 +7,6 @@ router.use(protect);
 
 router.get('/my-courses',getMyEnrollments);
 router.post('/:courseId',enrollCourse);
-router.get('/check/;courseId',checkEnrollment);
+router.get('/check/:courseId',checkEnrollment);
 
 module.exports = router;
